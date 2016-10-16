@@ -1,0 +1,46 @@
+.generate-info-block (@name, @bg, @textColor, @textFont, @titleFont ) {
+  .@{name} {
+
+    background-color: @color-window;
+    color: @textColor;
+    text-align: center;
+
+    .pip-content {
+      padding: 16px;
+      width: 30%;
+      @media (max-width: 768px) {
+        width: ~"calc(100% - 32px)";
+      }
+    }
+
+    .pip-title {
+      text-transform: uppercase;
+      font: @titleFont;
+      margin-bottom: 24px;
+    }
+    .pip-title-bg {
+      background-color: rgba(0,0,0,.26);
+    }
+
+    .pip-text {
+      font: @textFont;
+      line-height: 22px;
+    }
+
+    .pip-pic{
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+
+    .pip-blue{  color: rgba(3, 155, 229, .73);  }
+    .pip-pink{  color: rgba(171, 71, 188, .73); }
+    .pip-orange{color: rgba(239, 108, 0, .73);  }
+    .pip-yellow{ color: rgb(193, 163, 47)}
+    .pip-green{ color: rgb(74, 151, 68)}
+    .pip-white{ color: #fff;}
+  }
+}
+
+.generate-info-block (pip-info-block, @color-window, @color-primary, @font-subhead1, @font-title);
