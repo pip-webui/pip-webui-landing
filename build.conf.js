@@ -2,7 +2,7 @@ module.exports = {
     module: {
         name: 'pipLanding',
         styles: 'landing',
-        export: 'pip',
+        export: 'pip.landing',
         standalone: 'pip.landing'
     },
     build: {
