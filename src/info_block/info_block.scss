@@ -1,21 +1,21 @@
-.generate-info-block (@name, @bg, @textColor, @textFont, @titleFont ) {
-  .@{name} {
+@mixin generate-info-block ($name, $bg, $textColor, $textFont, $titleFont ) {
+  #{$name} {
 
-    background-color: @color-window;
-    color: @textColor;
+    background-color: $color-window;
+    color: $textColor;
     text-align: center;
 
     .pip-content {
       padding: 16px;
       width: 30%;
       @media (max-width: 768px) {
-        width: ~"calc(100% - 32px)";
+        width: calc(100% - 32px);
       }
     }
 
     .pip-title {
       text-transform: uppercase;
-      font: @titleFont;
+      font: $titleFont;
       margin-bottom: 24px;
     }
     .pip-title-bg {
@@ -23,7 +23,7 @@
     }
 
     .pip-text {
-      font: @textFont;
+      font: $textFont;
       line-height: 22px;
     }
 
@@ -43,4 +43,4 @@
   }
 }
 
-.generate-info-block (pip-info-block, @color-window, @color-primary, @font-subhead1, @font-title);
+@include generate-info-block ('.pip-info-block', $color-window, $color-primary, $font-subhead1, $font-title);

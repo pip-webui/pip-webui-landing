@@ -13,7 +13,7 @@
         [
             // 3rd Party Modules
             'ui.router', 'ui.utils', 'ngResource', 'ngAria', 'ngCookies', 'ngSanitize', 'ngMessages',
-            'ngMaterial', 'wu.masonry', 'LocalStorageModule', 'angularFileUpload', 'ngAnimate', 
+            'ngMaterial', 'wu.masonry', 'LocalStorageModule','ngAnimate', 
             'appLandingComponents.CallToAction', 'appLandingComponents.LandingToolbar', 'appLandingComponents.InfoBlock'
         ]
     );
