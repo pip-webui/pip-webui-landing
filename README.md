@@ -4,7 +4,25 @@
 
 Pip.WebUI.Landing modules contains controls to create engaging landing pages
 
-TBD...
+**Landing toolbar** provides dispalying of styled bar that contains application logo and links:
+
+<a href="https://github.com/pip-webui/pip-webui-landing/raw/master/doc/images/img-landing-toolbar.png" style="border: 3px ridge #c8d2df; display: inline-block">
+    <img src="https://github.com/pip-webui/pip-webui-landing/raw/master/doc/images/img-landing-toolbar.png"/>
+</a>
+
+**Info block** provides dispalying of styled block that contains images and text:
+
+<a href="https://github.com/pip-webui/pip-webui-landing/raw/master/doc/images/img-info-block.png" style="border: 3px ridge #c8d2df; display: inline-block">
+    <img src="https://github.com/pip-webui/pip-webui-landing/raw/master/doc/images/img-info-block.png"/>
+</a>
+
+**Call to action bar** provides dispalying of styled bar that contains text and action buttons:
+
+<a href="https://github.com/pip-webui/pip-webui-landing/raw/master/doc/images/img-call-to-action.png" style="border: 3px ridge #c8d2df; display: inline-block">
+    <img src="https://github.com/pip-webui/pip-webui-landing/raw/master/doc/images/img-call-to-action.png"/>
+</a>
+
+See online samples [here...](http://webui.pipdevs.com/pip-webui-landing/index.html#/toolbar)
 
 ## Learn more about the module
 
