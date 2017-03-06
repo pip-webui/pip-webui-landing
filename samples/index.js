@@ -1,15 +1,15 @@
 /* global angular */
 
-(function () {
+(() => {
     'use strict';
 
-    var content = [
+    let content = [
         { title: 'Landing toolbar', state: 'toolbar', url: '/toolbar', controller: 'LandingToolbarController', templateUrl: 'landing_toolbar.html' },
         { title: 'Info block', state: 'infoBlock', url: '/infoBlock', controller: 'InfoBlockController', templateUrl: 'info_block.html' },
         { title: 'Call to action', state: 'callAction', url: '/callAction', controller: 'CallToActionController', templateUrl: 'call_to_action.html' },
     ];
 
-    var thisModule = angular.module('appLandingComponents',
+    let thisModule = angular.module('appLandingComponents',
         [
             // 3rd Party Modules
             'ui.router', 'ui.utils', 'ngResource', 'ngAria', 'ngCookies', 'ngSanitize', 'ngMessages',
@@ -18,7 +18,7 @@
         ]
     );
 
-    thisModule.config(function ($stateProvider, $urlRouterProvider, $mdThemingProvider, $mdIconProvider) {
+    thisModule.config(($stateProvider, $urlRouterProvider, $mdThemingProvider, $mdIconProvider) => {
 
          $mdIconProvider.iconSet('icons', '../../lib/images/icons.svg', 512);
 
@@ -31,8 +31,7 @@
         } 
     );
 
-    thisModule.controller('AppController', 
-        function ($scope, $rootScope, $state, $mdSidenav) {
+    thisModule.controller('AppController', ($scope, $rootScope, $state, $mdSidenav) => {
             $scope.languages = ['en', 'ru'];
             $scope.themes = ['blue', 'green', 'pink', 'grey'];
 
