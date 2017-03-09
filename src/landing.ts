@@ -1,3 +1,1 @@
-﻿'use strict';
-
-angular.module('pipLanding', []);
+﻿angular.module('pipLanding', []);
