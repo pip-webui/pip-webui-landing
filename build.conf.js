@@ -1,16 +1,16 @@
 module.exports = {
     module: {
         name: 'pipLanding',
-        styles: 'landing',
+        styles: 'index',
         export: 'pip.landing',
         standalone: 'pip.landing'
     },
     build: {
         js: false,
         ts: false,
-        tsd: true,
-        bindle: true,
-        html: true,
+        tsd: false,
+        bindle: false,
+        html: false,
         sass: true,
         lib: true,
         images: true,
